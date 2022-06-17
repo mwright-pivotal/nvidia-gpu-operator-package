@@ -2,10 +2,94 @@
 apiVersion: imgpkg.carvel.dev/v1alpha1
 images:
 - annotations:
-    kbld.carvel.dev/id: harbor.services.edge.wrightcode.io/gpu/nvidia-gpu-operator:1.0.0
+    kbld.carvel.dev/id: k8s.gcr.io/nfd/node-feature-discovery:v0.10.1
     kbld.carvel.dev/origins: |
       - resolved:
-          tag: 1.0.0
-          url: harbor.services.edge.wrightcode.io/gpu/nvidia-gpu-operator:1.0.0
-  image: harbor.services.edge.wrightcode.io/gpu/nvidia-gpu-operator@sha256:43bd31afb70b93dc74a4613bb08336f9eef75585c546d3f78160fa6f27d93840
+          tag: v0.10.1
+          url: k8s.gcr.io/nfd/node-feature-discovery:v0.10.1
+  image: k8s.gcr.io/nfd/node-feature-discovery@sha256:4aebf17c8b72ee91cb468a6f21dd9f0312c1fcfdf8c86341f7aee0ec2d5991d7
+- annotations:
+    kbld.carvel.dev/id: nvcr.io/nvaie/gpu-operator-2-0:v1.10.1
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v1.10.1
+          url: nvcr.io/nvaie/gpu-operator-2-0:v1.10.1
+  image: nvcr.io/nvaie/gpu-operator-2-0@sha256:c7f9074c1a7f58947c807f23f2eece3a8b04e11175127919156f8e864821d45a
+- annotations:
+    kbld.carvel.dev/id: nvcr.io/nvaie/vgpu-guest-driver-2-0:510.47.03-ubuntu20.04
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: 510.47.03-ubuntu20.04
+          url: nvcr.io/nvaie/vgpu-guest-driver-2-0:510.47.03-ubuntu20.04
+  image: nvcr.io/nvaie/vgpu-guest-driver-2-0@sha256:045e874b4804224f5d811a41e0ef77802bbb0dde0131ad2460881d88f9ed945c
+- annotations:
+    kbld.carvel.dev/id: nvcr.io/nvidia/cloud-native/dcgm:2.3.4-1-ubuntu20.04
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: 2.3.4-1-ubuntu20.04
+          url: nvcr.io/nvidia/cloud-native/dcgm:2.3.4-1-ubuntu20.04
+  image: nvcr.io/nvidia/cloud-native/dcgm@sha256:2970cea2aa646491df4c2dee1eabc204bf94ee5e86262921ed13697d69f47e4a
+- annotations:
+    kbld.carvel.dev/id: nvcr.io/nvidia/cloud-native/gpu-operator-validator
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: nvcr.io/nvidia/cloud-native/gpu-operator-validator
+  image: nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:f7b41b8e78e331618e81baf47982dc30d9cb67b008d8e4b23b3726a643a46287
+- annotations:
+    kbld.carvel.dev/id: nvcr.io/nvidia/cloud-native/gpu-operator-validator:v1.10.1
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v1.10.1
+          url: nvcr.io/nvidia/cloud-native/gpu-operator-validator:v1.10.1
+  image: nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:24d804e8f005d7aeca8343aa13e5f92295d8642a4c47cb24e3ac86a22543bc37
+- annotations:
+    kbld.carvel.dev/id: nvcr.io/nvidia/cloud-native/k8s-driver-manager:v0.3.0
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v0.3.0
+          url: nvcr.io/nvidia/cloud-native/k8s-driver-manager:v0.3.0
+  image: nvcr.io/nvidia/cloud-native/k8s-driver-manager@sha256:5b16056257acc51b517d9cdb1da3218693cefc214af93789e6e214fd2b4cacf1
+- annotations:
+    kbld.carvel.dev/id: nvcr.io/nvidia/cloud-native/k8s-mig-manager:v0.3.0-ubuntu20.04
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v0.3.0-ubuntu20.04
+          url: nvcr.io/nvidia/cloud-native/k8s-mig-manager:v0.3.0-ubuntu20.04
+  image: nvcr.io/nvidia/cloud-native/k8s-mig-manager@sha256:8a214c3500241fded75990b06064867c26945a3ec1008a01ed753da6524c55d3
+- annotations:
+    kbld.carvel.dev/id: nvcr.io/nvidia/cuda
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: nvcr.io/nvidia/cuda
+  image: nvcr.io/nvidia/cuda@sha256:768ceeaebb96bd35221aa43dfcb7b66eda5e293e5847c8bba18283be653d3525
+- annotations:
+    kbld.carvel.dev/id: nvcr.io/nvidia/gpu-feature-discovery:v0.5.0
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v0.5.0
+          url: nvcr.io/nvidia/gpu-feature-discovery:v0.5.0
+  image: nvcr.io/nvidia/gpu-feature-discovery@sha256:c2e3d0fe41a0d227dbb70caec03c780cc76317515e5ab3875f31d50c63f41c66
+- annotations:
+    kbld.carvel.dev/id: nvcr.io/nvidia/k8s-device-plugin
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: latest
+          url: nvcr.io/nvidia/k8s-device-plugin
+  image: nvcr.io/nvidia/k8s-device-plugin@sha256:964847cc3fd85ead286be1d74d961f53d638cd4875af51166178b17bba90192f
+- annotations:
+    kbld.carvel.dev/id: nvcr.io/nvidia/k8s/container-toolkit:v1.9.0-ubuntu18.04
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: v1.9.0-ubuntu18.04
+          url: nvcr.io/nvidia/k8s/container-toolkit:v1.9.0-ubuntu18.04
+  image: nvcr.io/nvidia/k8s/container-toolkit@sha256:808f16df83765963f627c42e4fdf3b7e376d1a9d8a0154c2e430bcfd1614bc8f
+- annotations:
+    kbld.carvel.dev/id: nvcr.io/nvidia/k8s/dcgm-exporter:2.3.4-2.6.4-ubuntu20.04
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: 2.3.4-2.6.4-ubuntu20.04
+          url: nvcr.io/nvidia/k8s/dcgm-exporter:2.3.4-2.6.4-ubuntu20.04
+  image: nvcr.io/nvidia/k8s/dcgm-exporter@sha256:7507d27b8d4736531504abf4f011c0b9586fbb7dd9436e26c3b5cd1e262369db
 kind: ImagesLock
