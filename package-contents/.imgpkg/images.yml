@@ -1,0 +1,11 @@
+---
+apiVersion: imgpkg.carvel.dev/v1alpha1
+images:
+- annotations:
+    kbld.carvel.dev/id: harbor.services.edge.wrightcode.io/gpu/nvidia-gpu-operator:1.0.0
+    kbld.carvel.dev/origins: |
+      - resolved:
+          tag: 1.0.0
+          url: harbor.services.edge.wrightcode.io/gpu/nvidia-gpu-operator:1.0.0
+  image: harbor.services.edge.wrightcode.io/gpu/nvidia-gpu-operator@sha256:43bd31afb70b93dc74a4613bb08336f9eef75585c546d3f78160fa6f27d93840
+kind: ImagesLock

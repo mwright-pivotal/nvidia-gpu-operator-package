@@ -1,0 +1,12 @@
+#@data/values-schema
+
+---
+#@schema/desc "Email address used for Nvidia NGC Portal."
+
+ngc_email_address: wrightmi@vmware.com
+#@schema/desc "Nvidia NGC API Key."
+
+ngc_api_key: 1231231ababab
+#@schema/desc "Name used in hello message from app when app is pinged."
+
+hello_msg: stranger
