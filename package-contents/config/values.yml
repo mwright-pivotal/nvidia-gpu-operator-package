@@ -3,7 +3,7 @@
 ---
 #@schema/desc "Email address used for Nvidia NGC Portal."
 
-ngc_email_address: wrightmi@vmware.com
+ngc_email_address: someone@wrightcode.io
 #@schema/desc "Nvidia NGC API Key."
 
 ngc_api_key: 1231231ababab
